@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/curve_shape"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/custom_dialog_txtTitle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Burası Title"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+
+    <TextView
+        android:id="@+id/custom_dialog_txtSubtitle"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Burası sub title"
+        android:maxLines="4"
+        android:lines="4"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/custom_dialog_btnSingleOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_button"
+        android:text="Tamam"/>
+
+    <LinearLayout
+        android:id="@+id/custom_dialog_double_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/custom_dialog_btnDoubleCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_button"
+            android:text="İptal"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/custom_dialog_btnDoubleOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_button"
+            android:text="Tamam"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>
